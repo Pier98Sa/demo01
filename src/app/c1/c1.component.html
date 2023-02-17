@@ -5,7 +5,7 @@
 <label for="prova">Prova : </label>
 <input type="text" [value]="provaVar" id="prova"> <!-- property binding-->
 
-<input type="button" value="premi" (click)="clickHandler()"> <!-- eventy binding-->
+<input type="button" value="premi" (click)="clickHandler($event)"> <!-- eventy binding-->
 
 <div *ngIf="state"> <!-- Angular in directive-->
   <span >State is true</span>

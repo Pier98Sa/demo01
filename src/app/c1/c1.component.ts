@@ -10,7 +10,7 @@ export class C1Component {
   messaggio = "Ciao Angular";
   provaVar = "Contenuto dell'input";
   state = true;
-  
+
   constructor() {
     console.log('Il componente è stato creato dal runtime Angular');
   }
@@ -23,7 +23,10 @@ export class C1Component {
     console.log('Il componente è stato distrutto dal runtime Angular');
   }
 
-  clickHandler(){
+  clickHandler(event : any){
+
+    const labelDelBottone = event?.target.value;
+    console.log(labelDelBottone);
     this.messaggio = "Premuto bottone";
     this.provaVar =(this.state) ?  this.provaVar.toLowerCase() : this.provaVar.toUpperCase();
     this.state = !this.state;
