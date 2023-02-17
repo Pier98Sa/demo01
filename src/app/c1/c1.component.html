@@ -1,1 +1,21 @@
 <p>Saluti da c1</p>
+
+<h2>{{messaggio}}</h2>  <!-- Angular interpolation -->
+
+<label for="prova">Prova : </label>
+<input type="text" [value]="provaVar" id="prova"> <!-- property binding-->
+
+<input type="button" value="premi" (click)="clickHandler()"> <!-- eventy binding-->
+
+<div *ngIf="state"> <!-- Angular in directive-->
+  <span >State is true</span>
+</div>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reiciendis, qui, aliquid reprehenderit quasi laborum
+  voluptatum tempore laboriosam accusantium corrupti quos dolores omnis, voluptatibus repudiandae doloribus cupiditate
+  atque quibusdam ipsam nobis nemo nihil. Recusandae dignissimos non nihil pariatur ipsam numquam facilis eaque,
+  molestias veritatis, at ea quae ad aspernatur minus sed, ipsum minima. Possimus voluptatem, temporibus nobis fugit
+  eius nulla quos, maxime cupiditate laboriosam id tempora? Quibusdam, inventore doloribus reiciendis blanditiis
+  doloremque ea assumenda sed ullam eius quam quas voluptatum minima distinctio earum molestias quidem exercitationem?
+  Fugiat fugit natus tenetur, beatae laudantium blanditiis animi veniam nemo possimus doloribus. Esse, suscipit.</p>
