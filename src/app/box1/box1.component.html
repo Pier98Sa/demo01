@@ -1,0 +1,13 @@
+<div>
+
+<div *ngFor="let colore of array; let indice = index ">
+
+  <div>{{indice}} - {{colore}}</div>
+
+</div>
+
+</div>
+
+<select id="colori" (change)="elementoSelezionato($event)" >
+  <option *ngFor="let colore of array; let indice = index" [value]="indice">{{colore}}</option>
+</select>

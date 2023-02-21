@@ -2,3 +2,10 @@
 
 <app-c1></app-c1>
 <app-c1></app-c1>
+
+<input type="button" value="inverti Flag" (click)="invertiDisplay()">
+
+<div *ngIf="flag; then box1 else box2"></div>
+<ng-template #box1><app-box1></app-box1></ng-template>
+<ng-template #box2><app-box2></app-box2></ng-template>
+
